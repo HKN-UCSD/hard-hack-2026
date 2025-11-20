@@ -28,15 +28,16 @@
 }
 
 .navbar-links a {
-  color: white;
+  color: #81a4af;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-weight: 500;
   transition: color 0.3s ease;
+  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
 }
 
 .navbar-links a:hover {
-  color: #61dafb;
+  color: #a0c4cf;
 }
 
 .home-section {

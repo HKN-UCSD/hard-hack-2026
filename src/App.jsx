@@ -24,8 +24,8 @@ function App() {
           </div>
           
           <div className="event-details">
-            <p className="event-date">January 24th & 25th, 2026</p>
-            <p className="event-location">Qualcomm Conference Center</p>
+            <p className="event-date">Date: January 24th & 25th, 2026</p>
+            <p className="event-location">Location: Qualcomm Conference Center</p>
             <button className="signup-button">Sign Up</button>
           </div>
         </div>
