@@ -68,7 +68,7 @@
   width: auto;
   height: auto;
   object-fit: contain;
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
 }
 
 .logos-container {
@@ -122,6 +122,109 @@
 
 .signup-button:active {
   transform: translateY(0);
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 2rem;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #81a4af;
+  margin-bottom: 3rem;
+  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: rgba(190, 158, 146, 0.3);
+  border: 2px solid #be9e92;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background: rgba(190, 158, 146, 0.4);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  user-select: none;
+}
+
+.faq-question h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.expand-arrow {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 2rem;
+}
+
+.faq-item.expanded .faq-answer {
+  max-height: 500px;
+  padding: 0 2rem 1.5rem 2rem;
+}
+
+.faq-answer p {
+  color: #b3d4dd;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 0;
+  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
+}
+
+/* Remove old card styles */
+.faq-grid,
+.faq-card,
+.faq-card-inner,
+.faq-card-front,
+.faq-card-back,
+.flip-arrow {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-card {
+    height: 200px;
+  }
+  
+  .faq-title {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Responsive adjustments */
