@@ -13,10 +13,23 @@ function App() {
           <a href="#sponsor">Sponsor</a>
         </div>
       </nav>
-      <header className="App-header">
-        <h1>Hard Hack 2026</h1>
-        <p>Welcome to Hard Hack 2026!</p>
-      </header>
+      <section id="home" className="home-section">
+        <div className="home-content">
+          <img src="/media/banner/2026 HARD HACK Banner Design.png" alt="Hard Hack 2026" className="banner" />
+          
+          <div className="logos-container">
+            <img src="/media/logos/Yonder-Logo-White.png" alt="Yonder Logo" className="sponsor-logo" />
+            <img src="/media/logos/HKN-Logo-White.png" alt="HKN Logo" className="sponsor-logo" />
+            <img src="/media/logos/IEEE-Logo-White.png" alt="IEEE Logo" className="sponsor-logo" />
+          </div>
+          
+          <div className="event-details">
+            <p className="event-date">January 24th & 25th, 2026</p>
+            <p className="event-location">Qualcomm Conference Center</p>
+            <button className="signup-button">Sign Up</button>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

@@ -39,6 +39,109 @@
   color: #61dafb;
 }
 
+.home-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 66px); /* Full screen minus navbar height */
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100%;
+  padding: 1rem 0;
+}
+
+.banner {
+  max-width: 90%;
+  max-height: 35vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: -1rem;
+}
+
+.logos-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sponsor-logo {
+  height: clamp(60px, 8vh, 80px);
+  width: auto;
+  object-fit: contain;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: #81a4af;
+}
+
+.event-date,
+.event-location {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin: 0;
+  font-weight: 500;
+  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
+}
+
+.signup-button {
+  margin-top: 0.5rem;
+  padding: clamp(0.8rem, 2vw, 1rem) clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+  color: white;
+  background: #be9e92;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(190, 158, 146, 0.4);
+}
+
+.signup-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(190, 158, 146, 0.6);
+}
+
+.signup-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-height: 700px) {
+  .home-content {
+    gap: 1rem;
+  }
+  
+  .banner {
+    max-height: 20vh;
+  }
+  
+  .logos-container {
+    gap: 1rem;
+  }
+  
+  .event-details {
+    gap: 0.5rem;
+  }
+}
+
 .App-header {
   flex: 1;
   display: flex;
