@@ -20,7 +20,6 @@ function App() {
         <div className="navbar-links">
           <a href="#home">Home</a>
           <a href="#past-projects">Past Projects</a>
-          <a href="#sponsor">Sponsor</a>
         </div>
       </nav>
 
@@ -42,16 +41,6 @@ function App() {
         </div>
       </section>
 
-      <section id="sponsors" className="faq-section">
-        <div><h2 className="faq-title">Our Sponsors</h2></div>
-        <div className="sponsor-grid">
-          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
-          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
-          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
-          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
-        </div>
-
-      </section>
 
       <section id="faq" className="faq-section">
 
