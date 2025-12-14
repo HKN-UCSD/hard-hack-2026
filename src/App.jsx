@@ -46,15 +46,15 @@ function App() {
         <div><h2 className="faq-title">Our Sponsors</h2></div>
         <div className="sponsor-grid">
           <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
-          <img src="/media/logos/HKN-Logo-White.png" alt="HKN" className="sponsor-logo" />
-          <img src="/media/logos/IEEE-Logo-White.png" alt="IEEE" className="sponsor-logo" />
-          <img src="/media/logos/YourSponsorHere.png" alt="Sponsor" className="sponsor-logo" />
+          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
+          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
+          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
         </div>
 
       </section>
 
       <section id="faq" className="faq-section">
-        
+
         <div><h2 className="faq-title">Frequently Asked Questions</h2></div>
         <div className="faq-list">
 
