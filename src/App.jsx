@@ -41,6 +41,16 @@ function App() {
         </div>
       </section>
 
+      <section id="sponsors" className="faq-section">
+        <div><h2 className="faq-title">Our Sponsors</h2></div>
+        <div className="sponsor-grid">
+          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
+          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
+          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
+          <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
+        </div>
+
+      </section>
 
       <section id="faq" className="faq-section">
 
@@ -170,7 +180,7 @@ function App() {
               <div className="expand-arrow">{flippedCards[10] ? '−' : '+'}</div>
             </div>
             <div className="faq-answer">
-              <p>February 1, 2025 8AM - February 2, 2025 12PM</p>
+              <p>January 24th 2026 10AM - January 25th 2026 10:30AM</p>
             </div>
           </div>
 
