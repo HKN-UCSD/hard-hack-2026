@@ -4,7 +4,9 @@ import { useState } from 'react'
 import { Routes, Route, Link } from "react-router-dom"
 import PastProjects from "./PastProjects.jsx"
 
+
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
   const [flippedCards, setFlippedCards] = useState({})
 
   const toggleCard = (index) => {
@@ -17,14 +19,23 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar">
-        <div className="navbar-logo">
-          <img src="/media/logos/HARD Hack 2026 logo.png" alt="Hard Hack Logo" />
-        </div>
-        <div className="navbar-links">
-          <Link to="/">Home</Link>
-          <Link to="/past-projects">Past Projects</Link>
-        </div>
-      </nav>
+      <div className="navbar-logo">
+        <img src="/media/logos/HARD Hack 2026 logo.png" alt="Hard Hack Logo" />
+      </div>
+
+      <button
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        ☰
+      </button>
+
+      <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
+        <a href="/">Home</a>
+        <a href="/past-projects">Past Projects</a>
+      </div>
+    </nav>
 
       <Routes>
         <Route path="/" element={
@@ -110,7 +121,7 @@ function App() {
                         rel="noopener noreferrer"
                         style={{ color: "#2d535e", textDecoration: "underline" }}
                       >
-                        the form
+                        this form
                       </a>
                       {" "}
                       with your details with your team(And bring it to the day of competition). We look forward to having you at the event!
