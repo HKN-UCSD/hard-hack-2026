@@ -32,8 +32,10 @@ function App() {
       </button>
 
       <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
-        <a href="/">Home</a>
-        <a href="/past-projects">Past Projects</a>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
+          Past Projects
+        </Link>
       </div>
     </nav>
 
