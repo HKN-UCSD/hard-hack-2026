@@ -9,7 +9,7 @@ function PastProjects() {
 
       <div className="project-block">
         <img
-          src="/media/pastprojects/beatpacer.jpeg"
+          src="/public/media/pastprojects/beatpacer.jpeg"
           alt="Project 1"
           className="project-image"
         />
@@ -32,7 +32,7 @@ function PastProjects() {
 
       <div className="project-block">
         <img
-          src="/media/pastprojects/easycare.jpeg"
+          src="/public/media/pastprojects/easycare.jpeg"
           alt="Project 2"
           className="project-image"
         />
@@ -55,7 +55,7 @@ function PastProjects() {
 
       <div className="project-block">
         <img
-          src="/media/pastprojects/heatseekingfan.jpg"
+          src="/public/media/pastprojects/heatseekingfan.jpg"
           alt="Project 3"
           className="project-image"
         />
@@ -78,7 +78,7 @@ function PastProjects() {
 
       <div className="project-block">
         <img
-          src="/media/pastprojects/pantrypal.jpg"
+          src="/public/media/pastprojects/pantrypal.jpg"
           alt="Project 4"
           className="project-image"
         />
@@ -103,7 +103,7 @@ function PastProjects() {
 
       <div className="project-block">
         <img
-          src="/media/pastprojects/waste_segregation.jpeg"
+          src="/public/media/pastprojects/waste_segregation.jpeg"
           alt="Project 7"
           className="project-image"
         />
@@ -126,7 +126,7 @@ function PastProjects() {
 
        <div className="project-block">
         <img
-          src="/media/pastprojects/diagnosteo.jpg"
+          src="/public/media/pastprojects/diagnosteo.jpg"
           alt="Project 8"
           className="project-image"
         />
@@ -150,7 +150,7 @@ function PastProjects() {
         </div>
         <div className="project-block">
           <img
-            src="/media/pastprojects/rolle.png"
+            src="/public/media/pastprojects/rolle.png"
             alt="Project 9"
             className="project-image"
           />
