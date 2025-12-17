@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <nav className="navbar">
         <div className="navbar-logo">
-          <img src="/public/media/logos/HARD Hack 2026 logo.png" alt="Hard Hack Logo" />
+          <img src="/media/logos/HARD Hack 2026 logo.png" alt="Hard Hack Logo" />
         </div>
         <div className="navbar-links">
           <Link to="/">Home</Link>
@@ -31,12 +31,12 @@ function App() {
           <>
                 <section id="home" className="home-section">
                   <div className="home-content">
-                    <img src="/public/media/banner/2026 HARD HACK Banner Design.png" alt="Hard Hack 2026" className="banner" />
+                    <img src="/media/banner/2026 HARD HACK Banner Design.png" alt="Hard Hack 2026" className="banner" />
                     
                 <div className="logos-container">
-                  <img src="/public/media/logos/Yonder-Logo-White.png" alt="Yonder Logo" className="sponsor-logo" />
-                  <img src="/public/media/logos/HKN-Logo-White.png" alt="HKN Logo" className="sponsor-logo" />
-                  <img src="/public/media/logos/IEEE-Logo-White.png" alt="IEEE Logo" className="sponsor-logo" />
+                  <img src="/media/logos/Yonder-Logo-White.png" alt="Yonder Logo" className="sponsor-logo" />
+                  <img src="/media/logos/HKN-Logo-White.png" alt="HKN Logo" className="sponsor-logo" />
+                  <img src="/media/logos/IEEE-Logo-White.png" alt="IEEE Logo" className="sponsor-logo" />
                 </div>
                 
                 <div className="event-details">
@@ -56,10 +56,10 @@ function App() {
             <section id="sponsors" className="faq-section">
               <div><h2 className="faq-title">Our Sponsors</h2></div>
               <div className="sponsor-grid">
-                <img src="/public/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
-                <img src="/public/media/logos/digi_key_logo.png" alt="JSOE" className="sponsor-logo" />
-                <img src="/public/media/logos/ti.png" alt="JSOE" className="sponsor-logo" />
-                <img src="/public/media/logos/monster.png" alt="JSOE" className="sponsor-logo" />
+                <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
+                <img src="/media/logos/digi_key_logo.png" alt="JSOE" className="sponsor-logo" />
+                <img src="/media/logos/ti.png" alt="JSOE" className="sponsor-logo" />
+                <img src="/media/logos/monster.png" alt="JSOE" className="sponsor-logo" />
               </div>
 
             </section>
@@ -105,7 +105,7 @@ function App() {
                       Non-UCSD affiliates are welcome to join HARD Hack! You can register through the sign-up form on our website. 
                       Please print and fill out{" "}
                       <a
-                        href="/public/media/docs/Hard_Hack_Waiver.pdf"
+                        href="/media/docs/Hard_Hack_Waiver.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "#2d535e", textDecoration: "underline" }}
