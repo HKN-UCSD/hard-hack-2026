@@ -69,10 +69,18 @@ function App() {
             <section id="sponsors" className="faq-section">
               <div><h2 className="faq-title">Our Sponsors</h2></div>
               <div className="sponsor-grid">
-                <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" className="sponsor-logo" />
-                <img src="/media/logos/digi_key_logo.png" alt="JSOE" className="sponsor-logo" />
-                <img src="/media/logos/ti.png" alt="JSOE" className="sponsor-logo" />
-                <img src="/media/logos/monster.png" alt="JSOE" className="sponsor-logo" />
+                <div className="sponsor-item">
+                  <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" />
+                </div>
+                <div className="sponsor-item">
+                  <img src="/media/logos/digi_key_logo.png" alt="Digi-Key" />
+                </div>
+                <div className="sponsor-item">
+                  <img src="/media/logos/monster.png" alt="Monster" />
+                </div>
+                <div className="sponsor-item">
+                  <img src="/media/logos/qualcomm.png" alt="Qualcomm" />
+                </div>
               </div>
 
             </section>
