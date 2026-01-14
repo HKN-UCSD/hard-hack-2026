@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import { Routes, Route, Link } from "react-router-dom"
 import PastProjects from "./PastProjects.jsx"
+import arduinoq from './arduinoq.jsx'
 
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
           Past Projects
+        </Link>
+        <Link to="/arduinoq" onClick={() => setMenuOpen(false)}>
+          ArduinoQ
         </Link>
       </div>
     </nav>
