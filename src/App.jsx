@@ -3,7 +3,8 @@ import { useState } from 'react'
 
 import { Routes, Route, Link } from "react-router-dom"
 import PastProjects from "./PastProjects.jsx"
-import arduinoq from './arduinoq.jsx'
+
+import ArduinoUnoQ from './arduinoq.jsx';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
           Past Projects
         </Link>
         <Link to="/arduinoq" onClick={() => setMenuOpen(false)}>
-          ArduinoQ
+          Arduino Uno Q
         </Link>
       </div>
     </nav>
@@ -271,6 +272,7 @@ function App() {
       </>
           } />
         <Route path="/past-projects" element={<PastProjects />} />
+        <Route path="/arduinoq" element={<ArduinoUnoQ />} />
       </Routes>
     </div>
         
