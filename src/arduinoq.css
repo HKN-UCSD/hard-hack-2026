@@ -1,0 +1,70 @@
+/* Root section */
+.arduinoq-section {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+}
+
+
+/* Section title */
+.faq-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Intro paragraph */
+.about-arduinoq {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Feature blocks */
+.project-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.project-block.reverse { flex-direction: row-reverse; }
+
+/* Images */
+.project-image {
+  border-radius: 16px;
+  object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+/* Text content */
+.project-text {
+  max-width: 520px;
+}
+
+.project-text h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.project-text p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: black;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .project-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .project-text {
+    max-width: 100%;
+  }
+}
