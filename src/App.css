@@ -1,3 +1,26 @@
+/* Navbar links slide out left for MLH banner animation */
+.navbar-links.navbar-links-slide-out {
+  animation: navbar-slide-left 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+  animation-delay: 0.7s;
+}
+@keyframes navbar-slide-left {
+  0% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Default desktop: start at 150px right */
+.navbar-links {
+  transform: translateX(150px);
+  transition: transform 0.2s;
+}
+@media (max-width: 768px) {
+  .navbar-links {
+    transform: translateX(0) !important;
+  }
+}
 /* MLH Banner slide-down animation */
 .mlh-banner-initial {
   transform: translateY(-300px);

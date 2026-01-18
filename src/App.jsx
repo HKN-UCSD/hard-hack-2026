@@ -1,10 +1,13 @@
 import './App.css'
 import { useState, useEffect } from 'react'
-function MLHBanner() {
+
+function MLHBanner({ trigger }) {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    setTimeout(() => setShow(true), 100); // allow initial render
-  }, []);
+    if (trigger) {
+      setTimeout(() => setShow(true), 100);
+    }
+  }, [trigger]);
   return (
     <a
       id="mlh-trust-badge"
@@ -42,6 +45,20 @@ import ArduinoUnoQ from './arduinoq.jsx';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [flippedCards, setFlippedCards] = useState({})
+  const [navSlideOut, setNavSlideOut] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
+
+  // Only animate navbar if not in hamburger mode (desktop)
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) {
+      setNavSlideOut(true);
+      const timer = setTimeout(() => setShowBanner(true), 1300); // 0.5s delay + 0.8s animation
+      return () => clearTimeout(timer);
+    } else {
+      setShowBanner(true);
+    }
+  }, []);
 
   const toggleCard = (index) => {
     setFlippedCards(prev => ({
@@ -52,7 +69,7 @@ function App() {
 
   return (
     <>
-      <MLHBanner />
+      <MLHBanner trigger={showBanner} />
       <div className="App">
       <nav className="navbar">
       <div className="navbar-logo">
@@ -67,7 +84,10 @@ function App() {
         ☰
       </button>
 
-      <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
+      <div
+        className={`navbar-links ${menuOpen ? "open" : ""}${navSlideOut ? " navbar-links-slide-out" : ""}`}
+        style={showBanner ? { transform: 'translateX(0)' } : {}}
+      >
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
           Past Projects
