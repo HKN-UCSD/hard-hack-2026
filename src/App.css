@@ -1,3 +1,17 @@
+/* Ensure FAQ bubbles stay under navbar when focused or navigated to */
+.faq-item {
+  scroll-margin-top: 80px;
+}
+/* FAQ fade-in animation */
+.faq-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.faq-item.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
 .App {
   min-height: 100vh;
   display: flex;
@@ -26,12 +40,13 @@
   width: 100%;
   height: var(--navbar-height);
   position: fixed;
+  z-index: 1000;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
   backdrop-filter: blur(30px);
   padding-right: 180px; 
-  background: rgba(255, 255, 255, 0.08)
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .navbar-logo img {
