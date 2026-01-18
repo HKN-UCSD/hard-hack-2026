@@ -1,43 +1,58 @@
-
 import "./arduinoq.css";
-
 
 function ArduinoUnoQ() {
   return (
-    <section className="arduinoq-section" style={{ maxWidth: '1100px', margin: '0 auto', padding: '6rem 0' }}>
-      <h2 className="faq-title" style={{ textAlign: 'center', marginBottom: '2rem' }}>About Arduino Uno Q</h2>
-      <p className="about-arduinoq" style={{ color: '#2d535e', marginBottom: '2.5rem', textAlign: 'center' }}>
-        We’re very grateful for Qualcomm’s long-time support of Hard Hack and their donation of 10 Arduino Uno Q boards for this year’s event. The Arduino Uno Q brings together a Linux-capable processor and a microcontroller, letting you run programs and control hardware at the same time. With Wi-Fi, Bluetooth, and plenty of storage, it’s a great board for trying out new ideas and building cool projects. Thanks to Qualcomm, our hackers get to use the latest tech and push their creativity even further.
+    <section className="arduinoq-section">
+      <h2 className="faq-title">About Arduino Uno Q</h2>
+
+      <p className="about-arduinoq">
+        We are grateful for Qualcomm’s donation of Arduino Uno Q boards for this
+        year’s event. The Arduino Uno Q uniquely combines a Linux-capable
+        processor with a microcontroller, enabling participants to run full
+        programs while directly interfacing with hardware. Equipped with
+        onboard Wi-Fi, Bluetooth, and ample storage, the board provides an
+        excellent platform for rapid experimentation and innovative project
+        development. Select participants will receive an Arduino Uno Q, giving
+        them the opportunity to work hands-on with cutting-edge technology and
+        push their creativity even further.
       </p>
 
-      {/* Feature 1: AI in a Blink */}
-      <div className="project-block" style={{ marginBottom: '3rem' }}>
+      <div className="project-block">
         <img
-          src="/media/arduinounoq/arduinounoq-chip.avif"
-          alt="AI in a blink - Arduino Uno Q"
+          src="/media/arduinounoq/Background-features-2.jpeg"
+          alt="Arduino Uno Q performance and features"
           className="project-image"
-          style={{ maxWidth: 320, width: '100%', height: 'auto', marginRight: 24 }}
         />
         <div className="project-text">
-          <h3>AI in a Blink</h3>
+          <h3>Performance & Power</h3>
           <p>
-            Thanks to Qualcomm, our teams can experiment with vision and sound projects that respond to the world around them. The Uno Q lets you do things like image recognition and audio processing right on the board, without needing to connect to the cloud. We can’t wait to see what everyone comes up with using these boards!
+            The Arduino Uno Q features a Qualcomm Dragonwing QRB2210 SoC with a
+            quad-core Arm Cortex-A53 at 2.0 GHz and an integrated Adreno GPU,
+            running Debian Linux for high-level computing. It’s paired with an
+            STM32U585 Cortex-M33 microcontroller for real-time control. With
+            16 GB eMMC storage and dual ISPs supporting up to 25 MP at 30 fps,
+            the platform is well-suited for AI vision, audio processing, smart
+            cameras, voice assistants, and advanced robotics.
           </p>
         </div>
       </div>
 
-      {/* Feature 2: Quick Start Apps */}
-      <div className="project-block" style={{ flexDirection: 'row-reverse' }}>
+      <div className="project-block reverse">
         <img
-          src="/media/arduinounoq/arduinounoq-view.jpg"
-          alt="Quick start apps - Arduino Uno Q"
+          src="/media/arduinounoq/App-Lab-image.png"
+          alt="Arduino App Lab workflow"
           className="project-image"
-          style={{ maxWidth: 320, width: '100%', height: 'auto', marginLeft: 24 }}
         />
         <div className="project-text">
-          <h3>Quick Start Apps</h3>
+          <h3>Hybrid Development with Arduino App Lab</h3>
           <p>
-            The Uno Q comes with Arduino App Lab, so you can get started quickly with lots of examples and templates. You can mix Arduino code, Python, and more, all in one place. Whether you’re new or experienced, you’ll be able to build and test your ideas faster at Hard Hack, thanks to Qualcomm’s donation.
+            The Uno Q introduces a new approach to embedded development through
+            Arduino App Lab, bringing Python applications, Arduino sketches,
+            and AI models together in a unified workflow. Developers can mix
+            Arduino code, Python, and other tools in one environment, choosing
+            the right tool for each task. With built-in Wi-Fi and Bluetooth, the
+            board supports IoT devices, remote monitoring, and intelligent
+            wireless systems.
           </p>
         </div>
       </div>

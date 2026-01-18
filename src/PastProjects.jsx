@@ -3,7 +3,7 @@ import "./PastProjects.css"
 function PastProjects() {
   return (
     <section className="faq-section">
-      <h2 className="faq-title">Past Projects</h2>
+      <h2 className="pastprojects-title">Past Projects</h2>
 
       <div className="past-projects-list">
 

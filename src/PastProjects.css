@@ -6,6 +6,19 @@
   gap: 4rem;
 }
 
+.pastprojects-title{
+  text-align: center;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: #81a4af;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-shadow:
+    -1px -1px 0 #2d535e,
+     1px -1px 0 #2d535e,
+    -1px  1px 0 #2d535e,
+     1px  1px 0 #2d535e;
+}
+
 .project-block {
   display: flex;
   align-items: center;

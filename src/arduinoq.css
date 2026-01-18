@@ -1,72 +1,70 @@
-.arduinoq-section .about-arduinoq {
-  font-size: 1.7rem;
-  line-height: 1.5;
-}
-
+/* Root section */
 .arduinoq-section {
   max-width: 1100px;
   margin: 0 auto;
-  margin-top: 6rem;
-  padding: 0 0 2rem 0;
+  padding: 6rem 1.5rem 4rem;
 }
 
-.arduinoq-section .faq-title {
-  font-size: clamp(3rem, 6vw, 4.5rem);
+
+/* Section title */
+.faq-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.arduinoq-section p,
-.arduinoq-section .project-text p {
+/* Intro paragraph */
+.about-arduinoq {
   font-size: 1.5rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.arduinoq-section .project-text h3 {
-  font-size: 2.5rem;
-}
-
+/* Feature blocks */
 .project-block {
   display: flex;
   align-items: center;
-  gap: 3rem;
-  margin-bottom: 2.5rem;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
 }
 
+.project-block.reverse { flex-direction: row-reverse; }
+
+/* Images */
 .project-image {
-  width: 320px;
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-radius: 16px;
+  object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+/* Text content */
+.project-text {
+  max-width: 520px;
 }
 
 .project-text h3 {
-  font-size: 2rem;
-  color: #2d535e;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
 .project-text p {
   font-size: 1.3rem;
-  color: #2d535e;
+  line-height: 1.7;
+  color: black;
 }
 
+/* Responsive layout */
 @media (max-width: 900px) {
-  .arduinoq-section {
-    margin-top: 5rem;
-    padding: 0.5rem 0.5rem 1rem 0.5rem;
-  }
   .project-block {
     flex-direction: column !important;
     text-align: center;
-    gap: 1.5rem;
   }
-  .project-image {
-    margin: 0 !important;
+
+  .project-text {
+    max-width: 100%;
   }
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }

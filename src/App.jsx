@@ -1,5 +1,9 @@
 import './App.css'
 import { useState, useEffect } from 'react'
+import { Routes, Route, Link } from "react-router-dom"
+import PastProjects from "./PastProjects.jsx"
+import ArduinoUnoQ from './arduinoq.jsx';
+
 
 function MLHBanner({ trigger }) {
   const [show, setShow] = useState(false);
@@ -34,12 +38,7 @@ function MLHBanner({ trigger }) {
     </a>
   );
 }
-import { useFadeInOnScroll } from './useFadeInOnScroll.js';
 
-import { Routes, Route, Link } from "react-router-dom"
-import PastProjects from "./PastProjects.jsx"
-
-import ArduinoUnoQ from './arduinoq.jsx';
 
 
 function App() {
@@ -48,7 +47,7 @@ function App() {
   const [navSlideOut, setNavSlideOut] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
 
-  // Only animate navbar if not in hamburger mode (desktop)
+  // Only  navbar if not in hamburger mode (desktop)
   useEffect(() => {
     const isMobile = window.innerWidth <= 768;
     if (!isMobile) {
@@ -125,24 +124,54 @@ function App() {
               </div>
             </section>
 
-            <section id="sponsors" className="faq-section">
-              <div><h2 className="faq-title">Our Sponsors</h2></div>
-              <div className="sponsor-grid">
-                <div className="sponsor-item">
-                  <img src="/media/logos/UCSDLogo_JSOE_BlueGold.png" alt="JSOE" />
-                </div>
-                <div className="sponsor-item">
-                  <img src="/media/logos/digi_key_logo.png" alt="Digi-Key" />
-                </div>
-                <div className="sponsor-item">
-                  <img src="/media/logos/monster.png" alt="Monster" />
-                </div>
-                <div className="sponsor-item">
-                  <img src="/media/logos/qualcomm.png" alt="Qualcomm" />
-                </div>
-              </div>
+           <section id="sponsors" className="sponsor-section">
+  <h2 className="sponsor-title">Our Sponsors</h2>
 
-            </section>
+  <div className="sponsor-list">
+    <div className="sponsor-row">
+      <img src="/media/logos/ece_logo.png" alt="ECE" />
+      <div className="sponsor-text">
+        <h3>UCSD ECE Department</h3>
+        <p>
+          Supporting student innovation, technical excellence, and
+          professional development within engineering.
+        </p>
+      </div>
+    </div>
+
+    <div className="sponsor-row">
+      <img src="/media/logos/digi_key_logo.png" alt="Digi-Key" />
+      <div className="sponsor-text">
+        <h3>Digi-Key Electronics</h3>
+        <p>
+          Empowering engineers with components, tools, and resources
+          for rapid prototyping and learning.
+        </p>
+      </div>
+    </div>
+
+    <div className="sponsor-row">
+      <img src="/media/logos/qualcomm.png" alt="Qualcomm" />
+      <div className="sponsor-text">
+        <h3>Qualcomm</h3>
+        <p>
+          Driving innovation in wireless technologies and microcontroller development supporting
+          future engineers through education initiatives.
+        </p>
+      </div>
+    </div>
+
+    <div className="sponsor-row">
+      <img src="/media/logos/monster.png" alt="Monster" />
+      <div className="sponsor-text">
+        <h3>Monster Energy</h3>
+        <p>
+          Fueling creativity, collaboration, and late-night builds.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
             <section id="faq" className="faq-section">
 
@@ -150,11 +179,9 @@ function App() {
               <div className="faq-list">
 
                 {(() => {
-                  const [ref0, visible0] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref0}
-                      className={`faq-item${flippedCards[0] ? ' expanded' : ''}${visible0 ? ' fade-in' : ''}`}
+                      className={`faq-item ${flippedCards[0] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(0)}
                     >
                   <div className="faq-question">
@@ -185,11 +212,9 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref13, visible13] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref13}
-                      className={`faq-item${flippedCards[13] ? ' expanded' : ''}${visible13 ? ' fade-in' : ''}`}
+                      className={`faq-item ${flippedCards[13] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(13)}
                     >
                   <div className="faq-question">
@@ -219,11 +244,10 @@ function App() {
 
 
                 {(() => {
-                  const [ref1, visible1] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref1}
-                      className={`faq-item${flippedCards[1] ? ' expanded' : ''}${visible1 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[1] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(1)}
                     >
                   <div className="faq-question">
@@ -238,11 +262,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref2, visible2] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref2}
-                      className={`faq-item${flippedCards[2] ? ' expanded' : ''}${visible2 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[2] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(2)}
                     >
                   <div className="faq-question">
@@ -257,11 +280,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref3, visible3] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref3}
-                      className={`faq-item${flippedCards[3] ? ' expanded' : ''}${visible3 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[3] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(3)}
                     >
                   <div className="faq-question">
@@ -276,11 +298,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref4, visible4] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref4}
-                      className={`faq-item${flippedCards[4] ? ' expanded' : ''}${visible4 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[4] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(4)}
                     >
                   <div className="faq-question">
@@ -295,11 +316,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref5, visible5] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref5}
-                      className={`faq-item${flippedCards[5] ? ' expanded' : ''}${visible5 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[5] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(5)}
                     >
                   <div className="faq-question">
@@ -314,11 +334,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref6, visible6] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref6}
-                      className={`faq-item${flippedCards[6] ? ' expanded' : ''}${visible6 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[6] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(6)}
                     >
                   <div className="faq-question">
@@ -333,11 +352,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref7, visible7] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref7}
-                      className={`faq-item${flippedCards[7] ? ' expanded' : ''}${visible7 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[7] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(7)}
                     >
                   <div className="faq-question">
@@ -354,11 +372,10 @@ function App() {
                 
 
                 {(() => {
-                  const [ref8, visible8] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref8}
-                      className={`faq-item${flippedCards[8] ? ' expanded' : ''}${visible8 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[8] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(8)}
                     >
                   <div className="faq-question">
@@ -373,11 +390,11 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref9, visible9] = useFadeInOnScroll();
+
                   return (
                     <div
-                      ref={ref9}
-                      className={`faq-item${flippedCards[9] ? ' expanded' : ''}${visible9 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[9] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(9)}
                     >
                   <div className="faq-question">
@@ -392,11 +409,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref10, visible10] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref10}
-                      className={`faq-item${flippedCards[10] ? ' expanded' : ''}${visible10 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[10] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(10)}
                     >
                   <div className="faq-question">
@@ -411,11 +427,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref11, visible11] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref11}
-                      className={`faq-item${flippedCards[11] ? ' expanded' : ''}${visible11 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[11] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(11)}
                     >
                   <div className="faq-question">
@@ -430,11 +445,10 @@ function App() {
                 })()}
 
                 {(() => {
-                  const [ref12, visible12] = useFadeInOnScroll();
                   return (
                     <div
-                      ref={ref12}
-                      className={`faq-item${flippedCards[12] ? ' expanded' : ''}${visible12 ? ' fade-in' : ''}`}
+
+                      className={`faq-item ${flippedCards[12] ? ' expanded' : ''}`}
                       onClick={() => toggleCard(12)}
                     >
                   <div className="faq-question">

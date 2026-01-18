@@ -242,39 +242,10 @@
   transform: translateY(0);
 }
 
-
 .sponsor-section {
-  padding: 4rem 2rem;
-}
-
-.sponsor-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  max-width: 800px;
+  padding: 5rem 2rem;
+  max-width: 900px;
   margin: 0 auto;
-  justify-items: center;
-}
-
-/* logo container */
-.sponsor-item {
-  width: clamp(140px, 30vw, 260px);
-  aspect-ratio: 3 / 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* actual image */
-.sponsor-item img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-/* center lone logo in last row */
-.sponsor-item:last-child:nth-child(odd) {
-  grid-column: 1 / -1;
 }
 
 .sponsor-title {
@@ -285,13 +256,65 @@
   text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
 }
 
+.sponsor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; /* more vertical breathing room */
+}
+
+.sponsor-row {
+  display: grid;
+  grid-template-columns: 220px 1fr; /* MUCH larger logo column */
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.sponsor-row img {
+  max-width: 220px;
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.sponsor-text h3 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sponsor-text p {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.8vw, 1.25rem);
+  color: black;
+  line-height: 1.75;
+  max-width: 680px;
+}
+
+
+/* mobile */
+@media (max-width: 600px) {
+  .sponsor-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .sponsor-row img {
+    margin: 0 auto;
+  }
+
+  .sponsor-text p {
+    margin: 0 auto;
+  }
+}
+
 
 
 
 /* FAQ Section */
-.faq-section {
-  padding: 6rem 2rem;
+.faq-item {
+  opacity: 1;
 }
+
 
 .faq-title {
   text-align: center;
@@ -359,22 +382,13 @@
 }
 
 .faq-answer p {
-  color: #2d535e;
+  color: black;
   font-size: 1.3rem;
   line-height: 1.6;
   margin: 0;
   
 }
 
-/* Remove old card styles */
-.faq-grid,
-.faq-card,
-.faq-card-inner,
-.faq-card-front,
-.faq-card-back,
-.flip-arrow {
-  display: none;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
