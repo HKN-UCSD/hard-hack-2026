@@ -1,5 +1,36 @@
 import './App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+function MLHBanner() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setShow(true), 100); // allow initial render
+  }, []);
+  return (
+    <a
+      id="mlh-trust-badge"
+      className={show ? 'mlh-banner-slide' : 'mlh-banner-initial'}
+      href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=gray"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: 'block',
+        maxWidth: '100px',
+        minWidth: '60px',
+        position: 'fixed',
+        right: '50px',
+        top: 0,
+        width: '10%',
+        zIndex: 10000,
+      }}
+    >
+      <img
+        src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-gray.svg"
+        alt="Major League Hacking 2026 Hackathon Season"
+        style={{ width: '100%' }}
+      />
+    </a>
+  );
+}
 import { useFadeInOnScroll } from './useFadeInOnScroll.js';
 
 import { Routes, Route, Link } from "react-router-dom"
@@ -20,7 +51,9 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
+      <MLHBanner />
+      <div className="App">
       <nav className="navbar">
       <div className="navbar-logo">
         <img src="/media/logos/HARD Hack 2026 logo.png" alt="Hard Hack Logo" />
@@ -402,7 +435,7 @@ function App() {
         <Route path="/arduinoq" element={<ArduinoUnoQ />} />
       </Routes>
     </div>
-        
+    </>
   )
 }
 

@@ -1,3 +1,12 @@
+/* MLH Banner slide-down animation */
+.mlh-banner-initial {
+  transform: translateY(-300px);
+  transition: transform 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+.mlh-banner-slide {
+  transform: translateY(0);
+  transition: transform 1.2s cubic-bezier(0.4,0,0.2,1);
+}
 /* Ensure FAQ bubbles stay under navbar when focused or navigated to */
 .faq-item {
   scroll-margin-top: 80px;
@@ -6,7 +15,7 @@
 .faq-item {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  transition: opacity 1.3s cubic-bezier(0.4,0,0.2,1), transform 1.3s cubic-bezier(0.4,0,0.2,1);
 }
 .faq-item.fade-in {
   opacity: 1;
