@@ -88,12 +88,16 @@ function App() {
         style={showBanner ? { transform: 'translateX(0)' } : {}}
       >
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="https://docs.google.com/spreadsheets/d/1ihSYHDD8JpAtZpU26DFgQgHUk2Z7AXW1J3ahGX50Yjs/edit?gid=0#gid=0" onClick={() => setMenuOpen(false)}>
+          Schedule
+        </Link>
         <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
           Past Projects
         </Link>
         <Link to="/arduinoq" onClick={() => setMenuOpen(false)}>
           Arduino Uno Q
         </Link>
+        
       </div>
     </nav>
 
