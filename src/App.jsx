@@ -242,7 +242,35 @@ function App() {
                   );
                 })()}
 
-
+                {(() => {
+                  return (
+                    <div
+                      className={`faq-item ${flippedCards[14] ? ' expanded' : ''}`}
+                      onClick={() => toggleCard(14)}
+                    >
+                  <div className="faq-question">
+                    <h3>What is the schedule for HardHack like?</h3>
+                    <div className="expand-arrow">{flippedCards[14] ? '−' : '+'}</div>
+                  </div>
+                  <div className="faq-answer">
+                    <p>
+                      The latest schedule can be found{" "}
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1ihSYHDD8JpAtZpU26DFgQgHUk2Z7AXW1J3ahGX50Yjs/edit?gid=0#gid=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#2d535e", textDecoration: "underline" }}
+                      >
+                        here
+                      </a>
+                      
+                    
+                    </p>
+                  </div>
+                    </div>
+                  );
+                })()}
+              
                 {(() => {
                   return (
                     <div
