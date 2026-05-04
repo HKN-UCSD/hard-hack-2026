@@ -87,9 +87,9 @@ function App() {
         style={showBanner ? { transform: 'translateX(0)' } : {}}
       >
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link to="/" onClick={() => setMenuOpen(false)}> //fill in new link
-          Schedule
-        </Link>
+        <Link to="/" onClick={() => setMenuOpen(false)}>  
+          Schedule 
+        </Link> 
         <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
           Past Projects
         </Link>
@@ -256,7 +256,7 @@ function App() {
                     <p>
                       The latest schedule can be found{" "}
                       <a
-                        href="https://docs.google.com/spreadsheets/d/1ihSYHDD8JpAtZpU26DFgQgHUk2Z7AXW1J3ahGX50Yjs/edit?gid=0#gid=0"
+                        href="/"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "#2d535e", textDecoration: "underline" }}
