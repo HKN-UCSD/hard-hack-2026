@@ -3,6 +3,25 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, Link } from "react-router-dom"
 import PastProjects from "./PastProjects.jsx"
 
+import useEmblaCarousel from 'embla-carousel-react'
+
+export function EmblaCarousel() {
+  const [emblaRef] = useEmblaCarousel()
+
+  return (
+    <div className="embla">
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          <div className="embla__slide">Slide 1</div>
+          <div className="embla__slide">Slide 2</div>
+          <div className="embla__slide">Slide 3</div>
+        </div>
+      </div>
+
+      {/* Optional: Add navigation controls here */}
+    </div>
+  )
+}
 
 function MLHBanner({ trigger }) {
   const [show, setShow] = useState(false);

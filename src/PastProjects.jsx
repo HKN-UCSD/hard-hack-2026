@@ -2,6 +2,7 @@ import "./PastProjects.css"
 
 function PastProjects() {
   return (
+    
     <section className="faq-section">
       <h2 className="pastprojects-title">Past Projects</h2>
 
