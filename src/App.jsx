@@ -2,7 +2,6 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import { Routes, Route, Link } from "react-router-dom"
 import PastProjects from "./PastProjects.jsx"
-import ArduinoUnoQ from './arduinoq.jsx';
 
 
 function MLHBanner({ trigger }) {
@@ -94,10 +93,7 @@ function App() {
         <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
           Past Projects
         </Link>
-        <Link to="/arduinoq" onClick={() => setMenuOpen(false)}>
-          Arduino Uno Q
-        </Link>
-        
+
       </div>
     </nav>
 
@@ -498,7 +494,6 @@ function App() {
       </>
           } />
         <Route path="/past-projects" element={<PastProjects />} />
-        <Route path="/arduinoq" element={<ArduinoUnoQ />} />
       </Routes>
     </div>
     </>
