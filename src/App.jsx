@@ -87,7 +87,7 @@ function App() {
         style={showBanner ? { transform: 'translateX(0)' } : {}}
       >
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link to="https://docs.google.com/spreadsheets/d/1ihSYHDD8JpAtZpU26DFgQgHUk2Z7AXW1J3ahGX50Yjs/edit?gid=0#gid=0" onClick={() => setMenuOpen(false)}>
+        <Link to="/" onClick={() => setMenuOpen(false)}> //fill in new link
           Schedule
         </Link>
         <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
@@ -114,7 +114,7 @@ function App() {
                   <p className="event-date">Date: January 24th & 25th, 2026</p>
                   <p className="event-location">Location: Qualcomm Conference Center</p>
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScf3--P9qzx-4njh8XrNIpzY50MXeqn6gGIpuoLH7RSs0G5Dw/viewform?usp=dialog"
+                    href="" //fill in new link
                     target="_blank"
                     rel="noopener noreferrer"
                   >
