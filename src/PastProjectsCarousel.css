@@ -1,0 +1,113 @@
+.pastprojects-title {
+  text-align: center;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: #81a4af;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-shadow:
+    -1px -1px 0 #2d535e,
+     1px -1px 0 #2d535e,
+    -1px  1px 0 #2d535e,
+     1px  1px 0 #2d535e;
+}
+
+.embla {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.project-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-image {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.project-text h2 {
+  color: #2d535e;
+}
+
+.project-text p {
+  font-size: 1.3rem;
+  color: #2d535e;
+}
+
+.project-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-text a:hover {
+  text-decoration: underline;
+}
+
+.embla__prev,
+.embla__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #2d535e;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.embla__prev:hover,
+.embla__next:hover {
+  color: #81a4af;
+}
+
+.embla__prev {
+  left: 0.5rem;
+}
+
+.embla__next {
+  right: 0.5rem;
+}
+
+.embla__prev:disabled,
+.embla__next:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .embla {
+    padding: 0 3rem;
+  }
+
+  .project-block {
+    flex-direction: column;
+    text-align: center;
+  }
+}

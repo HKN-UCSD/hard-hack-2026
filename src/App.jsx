@@ -1,7 +1,7 @@
 import './App.css'
 import { useState, useEffect } from 'react'
 import { Routes, Route, Link } from "react-router-dom"
-import PastProjects from "./PastProjects.jsx"
+import PastProjectsCarousel from "./PastProjectsCarousel.jsx"
 
 import useEmblaCarousel from 'embla-carousel-react'
 
@@ -512,7 +512,7 @@ function App() {
             </section>
       </>
           } />
-        <Route path="/past-projects" element={<PastProjects />} />
+        <Route path="/past-projects" element={<PastProjectsCarousel />} />
       </Routes>
     </div>
     </>
