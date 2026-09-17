@@ -1,11 +1,11 @@
-import "./arduinoq.css";
+import "./SponsorSpotlight.css";
 
-function ArduinoUnoQ() {
+function SponsorSpotlight() {
   return (
-    <section className="arduinoq-section">
+    <section className="sponsor-spotlight-section">
       <h2 className="faq-title">About Arduino Uno Q</h2>
 
-      <p className="about-arduinoq">
+      <p className="sponsor-spotlight-about">
         We are grateful for Qualcomm’s donation of Arduino Uno Q boards for this
         year’s event. The Arduino Uno Q uniquely combines a Linux-capable
         processor with a microcontroller, enabling participants to run full
@@ -17,13 +17,14 @@ function ArduinoUnoQ() {
         push their creativity even further.
       </p>
 
-      <div className="project-block">
+      <div className="sponsor-feature-block">
         <img
           src="/media/arduinounoq/Background-features-2.jpeg"
           alt="Arduino Uno Q performance and features"
-          className="project-image"
+          className="sponsor-feature-image"
         />
-        <div className="project-text">
+
+        <div className="sponsor-feature-text">
           <h3>Performance & Power</h3>
           <p>
             The Arduino Uno Q features a Qualcomm Dragonwing QRB2210 SoC with a
@@ -37,13 +38,14 @@ function ArduinoUnoQ() {
         </div>
       </div>
 
-      <div className="project-block reverse">
+      <div className="sponsor-feature-block reverse">
         <img
           src="/media/arduinounoq/App-Lab-image.png"
           alt="Arduino App Lab workflow"
-          className="project-image"
+          className="sponsor-feature-image"
         />
-        <div className="project-text">
+
+        <div className="sponsor-feature-text">
           <h3>Hybrid Development with Arduino App Lab</h3>
           <p>
             The Uno Q introduces a new approach to embedded development through
@@ -60,4 +62,5 @@ function ArduinoUnoQ() {
   );
 }
 
-export default ArduinoUnoQ;
+export default SponsorSpotlight;
+export const SponsorSpotlightEnable = true;

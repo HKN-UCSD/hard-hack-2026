@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 import MLHBanner from "./MLHBanner.jsx";
+import { SponsorSpotlightEnable } from "../SponsorSpotlight.jsx";
 
 function Navbar({ logoSrc }) {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -49,9 +50,7 @@ function Navbar({ logoSrc }) {
                     <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
                         Past Projects
                     </Link>
-                    <Link to="/arduinoq" onClick={() => setMenuOpen(false)}>
-                        Arduino Uno Q
-                    </Link>
+                    {SponsorSpotlightEnable && (<Link to="/sponsor-spotlight" onClick={() => setMenuOpen(false)}>Sponsor Spotlight</Link>)}
                     
                 </div>
             </nav>

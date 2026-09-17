@@ -5,7 +5,7 @@ import Hero from './components/hero.jsx'
 import Sponsors from './components/Sponsors.jsx'
 import FAQ from "./components/FAQ.jsx"
 import PastProjects from "./PastProjects.jsx"
-import ArduinoUnoQ from './arduinoq.jsx';
+import SponsorSpotlight, { SponsorSpotlightEnable } from './SponsorSpotlight.jsx';
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
         } />
 
         <Route path="/past-projects" element={<PastProjects />} />
-        <Route path="/arduinoq" element={<ArduinoUnoQ />} />
+        {SponsorSpotlightEnable && (<Route path="/sponsor-spotlight" element={<SponsorSpotlight />} />)}
       </Routes>
     </div>
   )
