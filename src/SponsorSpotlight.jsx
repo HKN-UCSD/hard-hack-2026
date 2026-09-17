@@ -63,4 +63,4 @@ function SponsorSpotlight() {
 }
 
 export default SponsorSpotlight;
-export const SponsorSpotlightEnable = false;
+export const SponsorSpotlightEnable = true;
