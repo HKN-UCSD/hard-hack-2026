@@ -13,7 +13,6 @@ function FAQ() {
                             href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={{ color: "#2d535e", textDecoration: "underline" }}
                         >
                             Major League Hacking (MLH) Code of Conduct
                         </a>
@@ -32,7 +31,6 @@ function FAQ() {
                             href="/media/docs/Hard_Hack_Waiver.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={{ color: "#2d535e", textDecoration: "underline" }}
                         >
                             this form
                         </a>
@@ -48,7 +46,6 @@ function FAQ() {
                             href="https://docs.google.com/spreadsheets/d/1ihSYHDD8JpAtZpU26DFgQgHUk2Z7AXW1J3ahGX50Yjs/edit?gid=0#gid=0"
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={{ color: "#2d535e", textDecoration: "underline" }}
                         >
                             here
                         </a>
