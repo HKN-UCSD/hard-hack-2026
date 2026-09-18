@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 import MLHBanner from "./MLHBanner.jsx";
 
-function Navbar({ logoSrc }) {
+function Navbar({ logoSrc = "/media/theme/logo.png" }) {
     const [menuOpen, setMenuOpen] = useState(false)
     const [navSlideOut, setNavSlideOut] = useState(false);
     const [showBanner, setShowBanner] = useState(false);
