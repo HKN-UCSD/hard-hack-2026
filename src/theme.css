@@ -1,0 +1,38 @@
+/*
+ * HARD Hack yearly theme.
+ * To rebrand the site for a new year, replace the images in
+ * public/media/theme/ (background.png, banner.png, logo.png) and adjust
+ * the variables below. No component code needs to change.
+ */
+:root {
+  /* Fonts */
+  --font-heading: 'Caveat Brush', cursive;
+  --font-body: 'Patrick Hand', cursive;
+
+  /* Palette */
+  --color-primary: #81a4af;       /* nav links, section titles, event details */
+  --color-primary-hover: #a0c4cf; /* nav link hover */
+  --color-primary-dark: #2d535e;  /* text outline, buttons, link accents */
+  --color-accent: #be9e92;       /* faq border + button shadow accent */
+
+  --color-faq-bg: rgba(225, 225, 225, 0.7);
+  --color-faq-bg-hover: rgba(190, 158, 146, 0.7);
+  --color-faq-border: var(--color-accent);
+
+  --color-navbar-bg: rgba(255, 255, 255, 0.08);
+  --color-navbar-bg-mobile: rgba(255, 255, 255, 0.3);
+
+  --shadow-button: rgba(190, 158, 146, 0.4);
+  --shadow-button-hover: rgba(190, 158, 146, 0.6);
+
+  /* Outlined-text effect used on headings/labels over the background image */
+  --text-outline: -1px -1px 0 var(--color-primary-dark),
+                    1px -1px 0 var(--color-primary-dark),
+                   -1px  1px 0 var(--color-primary-dark),
+                    1px  1px 0 var(--color-primary-dark);
+
+  /* Theme images */
+  --theme-background-image: url('/media/theme/background.png');
+  --theme-logo-image: url('/media/theme/logo.png');
+  --theme-banner-image: url('/media/theme/banner.png');
+}
