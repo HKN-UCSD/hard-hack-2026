@@ -56,7 +56,7 @@
   content: "";
   position: fixed;
   inset: 0;
-  background: url('/media/background/HARD Hack Background.png')
+  background: var(--theme-background-image)
               center / cover no-repeat;
   z-index: -1;
 }
@@ -77,8 +77,8 @@
   align-items: center;
   padding: 0.5rem 1rem;
   backdrop-filter: blur(30px);
-  padding-right: 180px; 
-  background: rgba(255, 255, 255, 0.08);
+  padding-right: 180px;
+  background: var(--color-navbar-bg);
 }
 
 .navbar-logo img {
@@ -92,16 +92,16 @@
 }
 
 .navbar-links a {
-  color: #81a4af;
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 500;
   transition: color 0.3s ease;
-  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
+  text-shadow: var(--text-outline);
 }
 
 .navbar-links a:hover {
-  color: #a0c4cf;
+  color: var(--color-primary-hover);
 }
 
 .hamburger {
@@ -118,9 +118,9 @@
   padding: 0;                  /* remove default padding */
 
   font-size: 2.5rem;
-  color: #81a4af;
+  color: var(--color-primary);
   cursor: pointer;
-  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e;
+  text-shadow: -1px -1px 0 var(--color-primary-dark), 1px -1px 0 var(--color-primary-dark);
 }
 
 @media (max-width: 768px) {
@@ -142,7 +142,7 @@
     padding: 2rem 0;    /* controls dropdown height */
 
     backdrop-filter: blur(60px);
-    background: rgba(255, 255, 255, 0.30)
+    background: var(--color-navbar-bg-mobile)
   }
 
   .navbar-links.open {
@@ -207,7 +207,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.8rem;
-  color: #81a4af;
+  color: var(--color-primary);
 }
 
 .event-date,
@@ -215,27 +215,27 @@
   font-size: clamp(1.5rem, 4vw, 2rem);
   margin: 0;
   font-weight: 500;
-  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
+  text-shadow: var(--text-outline);
 }
 
 .signup-button {
-  font-family: 'Caveat Brush', cursive;
+  font-family: var(--font-heading);
   margin-top: 0.5rem;
   padding: clamp(0.8rem, 2vw, 1rem) clamp(2rem, 5vw, 3rem);
   font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-  font-weight: 400; 
+  font-weight: 400;
   color: white;
-  background: #2d535e;
+  background: var(--color-primary-dark);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 15px rgba(190, 158, 146, 0.4);
+  box-shadow: 0 4px 15px var(--shadow-button);
 }
 
 .signup-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(190, 158, 146, 0.6);
+  box-shadow: 0 6px 20px var(--shadow-button-hover);
 }
 
 .signup-button:active {
@@ -251,9 +251,9 @@
 .sponsor-title {
   text-align: center;
   font-size: clamp(4rem, 5vw, 5rem);
-  color: #81a4af;
+  color: var(--color-primary);
   margin-bottom: 3rem;
-  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
+  text-shadow: var(--text-outline);
 }
 
 .sponsor-list {
@@ -319,9 +319,9 @@
 .faq-title {
   text-align: center;
   font-size: clamp(4rem, 5vw, 5rem);
-  color: #81a4af;
+  color: var(--color-primary);
   margin-bottom: 3rem;
-  text-shadow: -1px -1px 0 #2d535e, 1px -1px 0 #2d535e, -1px 1px 0 #2d535e, 1px 1px 0 #2d535e;
+  text-shadow: var(--text-outline);
 }
 
 .faq-list {
@@ -333,8 +333,8 @@
 }
 
 .faq-item {
-  background: rgba(225, 225, 225, 0.7);
-  border: 2px solid #be9e92;
+  background: var(--color-faq-bg);
+  border: 2px solid var(--color-faq-border);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -342,7 +342,7 @@
 }
 
 .faq-item:hover {
-  background: rgba(190, 158, 146, 0.7);
+  background: var(--color-faq-bg-hover);
 }
 
 .faq-question {
@@ -386,7 +386,12 @@
   font-size: 1.3rem;
   line-height: 1.6;
   margin: 0;
-  
+
+}
+
+.faq-answer a {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
 }
 
 
