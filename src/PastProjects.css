@@ -10,14 +10,10 @@
 .pastprojects-title{
   text-align: center;
   font-size: clamp(3rem, 6vw, 4.5rem);
-  color: #81a4af;
+  color: var(--color-primary);
   margin-top: 5rem;
   margin-bottom: 2rem;
-  text-shadow:
-    -1px -1px 0 #2d535e,
-     1px -1px 0 #2d535e,
-    -1px  1px 0 #2d535e,
-     1px  1px 0 #2d535e;
+  text-shadow: var(--text-outline);
 }
 
 .project-block {
@@ -33,12 +29,12 @@
 
 .project-text h3 {
   font-size: 2rem;
-  color: #2d535e;
+  color: var(--color-primary-dark);
 }
 
 .project-text p {
   font-size: 1.3rem;
-  color: #2d535e;
+  color: var(--color-primary-dark);
 }
 
 @media (max-width: 768px) {

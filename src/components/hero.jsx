@@ -1,4 +1,4 @@
-function Hero({ bannerSrc, bannerAlt, date, location, form }) {
+function Hero({ bannerSrc = "/media/theme/banner.png", bannerAlt = "HARD Hack", date, location, form }) {
     return (
         <div className="home-content">
             <img src={bannerSrc} alt={bannerAlt} className="banner" />
