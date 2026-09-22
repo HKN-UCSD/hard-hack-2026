@@ -142,7 +142,7 @@
     padding: 2rem 0;    /* controls dropdown height */
 
     backdrop-filter: blur(60px);
-    background: var(--color-navbar-bg-mobile)
+    background: var(--color-navbar-bg-mobile);
   }
 
   .navbar-links.open {
@@ -427,24 +427,4 @@
   .event-details {
     gap: 0.5rem;
   }
-}
-
-.App-header {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-.App-header h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.App-header p {
-  font-size: 1.5rem;
-  color: #61dafb;
 }
