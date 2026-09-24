@@ -7,7 +7,7 @@
   padding: 0 1.5rem;
 }
 
-.pastprojects-title{
+.pastprojects-title {
   text-align: center;
   font-size: clamp(3rem, 6vw, 4.5rem);
   color: var(--color-primary);
@@ -19,28 +19,42 @@
 .project-block {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
 }
 
 .project-image {
   width: 300px;
-  border-radius: 12px;
+  border-radius: 16px;
+  object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-text {
+  max-width: 520px;
 }
 
 .project-text h3 {
-  font-size: 2rem;
-  color: var(--color-primary-dark);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
 .project-text p {
   font-size: 1.3rem;
-  color: var(--color-primary-dark);
+  line-height: 1.7;
+  color: black;
 }
 
 @media (max-width: 768px) {
   .project-block {
     flex-direction: column;
     text-align: center;
+  }
+
+  .project-text {
+    max-width: 100%;
   }
 }
 

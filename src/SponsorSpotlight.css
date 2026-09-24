@@ -44,6 +44,7 @@
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+  color: var(--color-primary-dark);
 }
 
 .sponsor-feature-text p {
