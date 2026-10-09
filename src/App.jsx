@@ -6,6 +6,7 @@ import Sponsors from './components/Sponsors.jsx'
 import FAQ from "./components/FAQ.jsx"
 import PastProjects from "./PastProjects.jsx"
 import ArduinoUnoQ from './arduinoq.jsx';
+import siteConfig from './config/siteConfig.js'
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
           <>
             <section id="home" className="home-section">
               <Hero
-                date="Date: January 24th & 25th, 2026"
-                location="Location: Qualcomm Conference Center"
-                form="https://docs.google.com/forms/d/e/1FAIpQLScf3--P9qzx-4njh8XrNIpzY50MXeqn6gGIpuoLH7RSs0G5Dw/viewform?usp=dialog"
+                date={`Date: ${siteConfig.dateText}`}
+                location={`Location: ${siteConfig.location}`}
+                form={siteConfig.signupForm}
               />
             </section>
 
