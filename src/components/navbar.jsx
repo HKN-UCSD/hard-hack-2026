@@ -50,8 +50,10 @@ function Navbar({ logoSrc = "/media/theme/logo.png" }) {
                     <Link to="/past-projects" onClick={() => setMenuOpen(false)}>
                         Past Projects
                     </Link>
-                    {SponsorSpotlightEnable && (<Link to="/sponsor-spotlight" onClick={() => setMenuOpen(false)}>Sponsor Spotlight</Link>)}
-                    
+                    {SponsorSpotlightEnable && (<Link to="/sponsor-spotlight" onClick={() => setMenuOpen(false)}> Sponsor Spotlight </Link>)}
+                    <Link to="mailto:ucsd.hard.hack@gmail.com" onClick={() => setMenuOpen(false)}>
+                        Contact
+                    </Link>    
                 </div>
             </nav>
         </>
