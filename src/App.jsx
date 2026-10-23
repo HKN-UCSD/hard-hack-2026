@@ -7,6 +7,7 @@ import FAQ from "./components/FAQ.jsx"
 import PastProjects from "./PastProjects.jsx"
 import ArduinoUnoQ from './arduinoq.jsx';
 import siteConfig from './config/siteConfig.js'
+import SponsorSpotlight, { SponsorSpotlightEnable } from './SponsorSpotlight.jsx';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         } />
 
         <Route path="/past-projects" element={<PastProjects />} />
-        <Route path="/arduinoq" element={<ArduinoUnoQ />} />
+        {SponsorSpotlightEnable && (<Route path="/sponsor-spotlight" element={<SponsorSpotlight />} />)}
       </Routes>
     </div>
   )
