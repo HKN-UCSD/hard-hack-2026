@@ -5,7 +5,6 @@ import Hero from './components/hero.jsx'
 import Sponsors from './components/Sponsors.jsx'
 import FAQ from "./components/FAQ.jsx"
 import PastProjects from "./PastProjects.jsx"
-import ArduinoUnoQ from './arduinoq.jsx';
 import siteConfig from './config/siteConfig.js'
 import SponsorSpotlight, { SponsorSpotlightEnable } from './SponsorSpotlight.jsx';
 
