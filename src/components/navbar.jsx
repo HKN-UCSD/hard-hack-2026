@@ -22,8 +22,11 @@ function Navbar({ logoSrc = "/media/theme/logo.png" }) {
 
     return (
         <>
-            <MLHBanner trigger={showBanner} imgSrc="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-gray.svg" imgAlt="Major League Hacking 2026 Hackathon Season"
-            href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=gray"
+            <MLHBanner
+                trigger={showBanner}
+                imgSrc="https://logged-assets.s3.amazonaws.com/trust-badge/2027/mlh-trust-badge-2027-gray.svg"
+                imgAlt="Major League Hacking 2027 Hackathon Season"
+                href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2027-season&utm_content=gray"
             />
 
             <nav className="navbar">
