@@ -1,4 +1,5 @@
 import FAQCard from "./FAQCard.jsx";
+import faq from "../data/faq.js";
 
 function FAQ() {
     return (
@@ -99,6 +100,15 @@ function FAQ() {
                 <FAQCard title="How to be a mentor or judge?">
                     <p>Email ucsd.hard.hack@gmail.com if you are interested in volunteering as a mentor and/or presiding as a judge.</p>
                 </FAQCard>
+                {faq.map(({ question, answer }) => (
+                    <FAQCard key={question} title={question}>
+                        <p>
+                            {[].concat(answer).map((part, i) => typeof part === "string" ? part : (
+                                <a key={i} href={part.href} target="_blank" rel="noopener noreferrer">{part.text}</a>
+                            ))}
+                        </p>
+                    </FAQCard>
+                ))}
             </div>
         </section>
     );
