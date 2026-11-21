@@ -97,7 +97,7 @@ function FAQ() {
                 </FAQCard>
 
                 <FAQCard title="How to be a mentor or judge?">
-                    <p>Email hardhack@eng.ucsd.edu if you are interested in volunteering as a mentor and/or presiding as a judge.</p>
+                    <p>Email ucsd.hard.hack@gmail.com if you are interested in volunteering as a mentor and/or presiding as a judge.</p>
                 </FAQCard>
             </div>
         </section>
